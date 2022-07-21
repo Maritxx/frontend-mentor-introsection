@@ -21,9 +21,10 @@ function navToggle () {
 }
 
 
-//Add overlay when clicking menu button.
+//Add overlay when clicking menu button. Broken.
 function overlayToggle () {
 	let overlay = document.getElementById('overlay');
+	let bodyElement = document.getElementsByTagName('body');
 
 	if (overlay.classList.contains('active')) {
 		overlay.classList.remove('active');
@@ -37,5 +38,3 @@ const menuButton = document.getElementById("menu-button");
 
 menuButton.addEventListener("click", expandMenu);
 menuButton.addEventListener("click", navToggle);
-menuButton.addEventListener("click", overlayToggle);
-
