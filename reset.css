@@ -62,6 +62,7 @@ figcaption {
 
 button {
   outline: 0;
+  background-color: unset;
 }
 
 q {
