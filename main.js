@@ -1,3 +1,4 @@
+//Dropdown for the sidebar menu for mobile.
 function expandMenu () {
 	let sidebarMenu = document.getElementById('sidebarMenu');
 	
@@ -8,7 +9,8 @@ function expandMenu () {
 	}
 }
 
-function expandMenu () {
+//Hamburger button toggle effect.
+function navToggle () {
 	let navIcon = document.getElementById('nav-icon');
 
 	if (navIcon.classList.contains('open')) {
@@ -17,3 +19,10 @@ function expandMenu () {
 		navIcon.classList.add('open');
 	}
 }
+
+//Assiging dropdown and button toggle effect to hamburger button.
+const menuButton = document.getElementById("menu-button");
+
+menuButton.addEventListener("click", expandMenu);
+menuButton.addEventListener("click", navToggle);
+
