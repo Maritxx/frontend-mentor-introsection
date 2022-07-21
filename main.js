@@ -23,7 +23,7 @@ function navToggle () {
 
 //Add overlay when clicking menu button.
 function overlayToggle () {
-	let bodyElement = document.getElementsByTagName("body");
+	let bodyElement = document.getElementsByTagName('body');
 
 	if (bodyElement.classList.contains('overlay')) {
 		bodyElement.classList.remove('overlay');
