@@ -23,7 +23,10 @@ function navToggle () {
 
 //Add overlay when clicking menu button. Broken.
 function overlayToggle () {
+<<<<<<< HEAD
 	let overlay = document.getElementById('overlay');
+=======
+>>>>>>> parent of cabd609 (Pls fix my overlay.)
 	let bodyElement = document.getElementsByTagName('body');
 
 	if (overlay.classList.contains('active')) {
