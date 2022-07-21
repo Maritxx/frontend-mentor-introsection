@@ -20,6 +20,18 @@ function navToggle () {
 	}
 }
 
+//Add overlay when clicking menu button. BROKEN
+function overlayToggle () {
+	let bodyElement = document.body;
+
+	if (bodyElement.classList.contains('overlay')) {
+		bodyElement.classList.remove('overlay');
+	} else {
+		bodyElement.classList.add('overlay');
+	}
+}
+
+
 
 //Assiging dropdown and button toggle effect to hamburger button.
 const menuButton = document.getElementById("menu-button");

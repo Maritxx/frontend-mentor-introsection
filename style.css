@@ -5,24 +5,11 @@ body {
 	font-family: var(--main-font);
 }
 
-#overlay.active {
-	position: absolute;
-	width: 0vw;
-	height: 0vh;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	background-color: rgba(20,20,20,0.4);
-	width: 100vw;
-	height: 100vh;
-}
-
 .button a {
 	display: block;
 	padding: 10px 15px;
 	border-radius: 25px;
 }
-
 
 
 /*Font Styling*/
@@ -80,7 +67,7 @@ h1 {
 		width: 50px;
 		height: 45px;
 		position: relative;
-		z-index: 3;
+		z-index: 2;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
@@ -157,7 +144,7 @@ h1 {
 		width: 0;
 		top: 0;
 		right: 0;		
-		z-index: 2;
+		z-index: 1;
 		background-color: var(--bg-primary);
 		transition: 0.5s;
 	}
@@ -166,10 +153,15 @@ h1 {
 		width: 250px;
 	}
 
-	.sidebar__container nav {
+	.sidebar__container {
 		padding-top: 100px;
 	}
 }
+
+
+
+
+
 
 @media all and (min-width: 767px) {
 	.mobile-menu__holder {
