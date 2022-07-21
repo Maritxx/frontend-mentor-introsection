@@ -25,7 +25,7 @@ function navToggle () {
 function overlayToggle () {
 	let bodyElement = document.getElementsByTagName("body");
 
-	if (bodyElement.classlist.contains('overlay')) {
+	if (bodyElement.classList.contains('overlay')) {
 		bodyElement.classList.remove('overlay');
 	} else {
 		bodyElement.classList.add('overlay');
