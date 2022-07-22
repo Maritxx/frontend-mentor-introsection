@@ -46,15 +46,15 @@ const accordionButtons = document.querySelectorAll(".accordionButton");
 
 accordionButtons.forEach((accordionButton) => {
 	accordionButton.addEventListener("click", () => {
-		if (accordionButton.classList.contains("open")) {
-			accordionButton.classList.remove("open");
+		if (accordionButton.classList.contains("accordion-open")) {
+			accordionButton.classList.remove("accordion-open");
 		} else {
-			const openAccordionButtons = document.querySelectorAll(".open");
+			const openAccordionButtons = document.querySelectorAll(".accordion-open");
 
 			openAccordionButtons.forEach((openAccordionButton) => {
-				openAccordionButton.classList.remove("open");
+				openAccordionButton.classList.remove("accordion-open");
 			});
-			accordionButton.classList.add("open");
+			accordionButton.classList.add("accordion-open");
 		}
 	});
 });

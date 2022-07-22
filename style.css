@@ -11,11 +11,6 @@ body {
 	border-radius: 25px;
 }
 
-#overlay {
-	width: 0;
-	height: 0;
-}
-
 #overlay.active {
 	background-color: rgba(20, 20, 20, 0.5);
 	width: 100%;
@@ -181,7 +176,7 @@ h1 {
 		display: none;
 	}
 
-	.accordionButton.open + .accordionDropdown {
+	.accordionButton.accordion-open + .accordionDropdown {
 		display: block;
 	}
 }
