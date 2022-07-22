@@ -27,6 +27,7 @@ h1 {
 	font-size: 2.25rem;
 	font-weight: 700;
 	color: var(--heading-primary);
+	padding-top: 40px;
 }
 
 .introduction__text p, a {
@@ -36,16 +37,48 @@ h1 {
 
 
 /*Header*/
-.nav-desktop__holder {
-	display: flex;
-	justify-content: space-between;
+.button__regular a, .button__border a {
+	font-size: 1rem;
+	text-align: center;
+	margin: 10px 20px;
 }
+
+.button__border a {
+	border: 2px solid var(--text-primary);
+}
+
+	/*Accordion Styling*/
+	.accordionButton + .accordionDropdown {
+		display: none;
+	}
+
+	.accordionButton.accordion-open + .accordionDropdown {
+		display: block;
+	}
+
 
 
 /*Introduction Section*/
 .introduction {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.introduction__logos img {
+	padding: 0px 10px;
+	max-width: 20vw;
+	max-height: 30px;
+	vertical-align: middle;
+}
+
+.button__black a {
+	font-weight: 700;
+	color: var(--bg-primary);
+	background-color: var(--heading-primary);
+}
+
+picture img {
+	width: 100%;
 }
 
 
@@ -66,12 +99,13 @@ h1 {
 		float: right;
 	}
 
-	.introduction__text {
+	.content-holder__text {
 		text-align: center;
+		padding: 15px;
 	}
 
-	picture img {
-		width: 100%;
+	.button__black a {
+		text-align: center;
 	}
 
 
@@ -172,16 +206,7 @@ h1 {
 	}
 
 	ul li {
-		padding: 20px;
-	}
-
-	/*Accordion Styling*/
-	.accordionButton + .accordionDropdown {
-		display: none;
-	}
-
-	.accordionButton.accordion-open + .accordionDropdown {
-		display: block;
+		padding: 10px 20px;
 	}
 }
 
@@ -194,4 +219,26 @@ h1 {
 	.mobile-menu__holder {
 		display: none;
 	}
+
+	.introduction {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.content-holder__text {
+		flex: 0 1 60%;
+	}
+
+	.content-holder__image {
+		flex: 0 1 40%;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	.nav-desktop__holder {
+		display: flex;
+	}
+	
 }
