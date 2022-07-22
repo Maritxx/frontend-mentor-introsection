@@ -236,6 +236,11 @@ picture img {
 		display: flex;
 	}
 
+	.desktop-menu__holder img {
+		width: 84px;
+		height: 30px;
+	}
+
 	.introduction {
 		display: flex;
 		flex-direction: row-reverse;
