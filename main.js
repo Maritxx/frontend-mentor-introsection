@@ -39,3 +39,22 @@ const menuButton = document.getElementById("menu-button");
 menuButton.addEventListener("click", expandMenu);
 menuButton.addEventListener("click", navToggle);
 menuButton.addEventListener("click", overlayToggle);
+
+
+//Accordion Buttons for menu.
+const accordionButtons = document.querySelectorAll(".accordionButton");
+
+accordionButtons.forEach((accordionButton) => {
+	accordionButton.addEventListener("click", () => {
+		if (accordionButton.classList.contains("open")) {
+			accordionButton.classList.remove("open");
+		} else {
+			const openAccordionButtons = document.querySelectorAll(".open");
+
+			openAccordionButtons.forEach((openAccordionButton) => {
+				openAccordionButton.classList.remove("open");
+			});
+			accordionButton.classList.add("open");
+		}
+	});
+});

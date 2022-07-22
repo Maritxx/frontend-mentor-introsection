@@ -171,6 +171,19 @@ h1 {
 	.sidebar__container {
 		padding-top: 100px;
 	}
+
+	ul li {
+		padding: 20px;
+	}
+
+	/*Accordion Styling*/
+	.accordionButton + .accordionDropdown {
+		display: none;
+	}
+
+	.accordionButton.open + .accordionDropdown {
+		display: block;
+	}
 }
 
 
