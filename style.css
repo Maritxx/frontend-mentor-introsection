@@ -10,6 +10,7 @@ body {
 	padding: 10px 15px;
 	border-radius: 10px;
 	font-size: 1rem;
+	text-align: center;
 }
 
 #overlay.active {
@@ -39,7 +40,6 @@ h1 {
 
 /*Header*/
 .button__regular a, .button__border a {
-	text-align: center;
 	margin: 10px 20px;
 }
 
@@ -75,8 +75,8 @@ h1 {
 	font-weight: 700;
 	color: var(--bg-primary);
 	background-color: var(--heading-primary);
-	padding: 10px 20px;
-	width: 20%;
+	padding: 10px 25px;
+	max-width: 150px;
 }
 
 picture img {
@@ -107,9 +107,7 @@ picture img {
 	}
 
 	.button__black a {
-		text-align: center;
 		margin: 0 auto;
-		width: 150px;
 	}
 
 	.introduction__text p {
@@ -235,6 +233,7 @@ picture img {
 
 	.desktop-menu__holder {
 		padding: 30px;
+		display: flex;
 	}
 
 	.introduction {
@@ -245,7 +244,7 @@ picture img {
 	}
 
 	.content-holder__text {
-		flex: 0 1 40%;
+		flex: 0 1 50%;
 	}
 
 	.content-holder__image {
@@ -254,6 +253,11 @@ picture img {
 
 	h1 {
 		font-size: 4.5rem;
+		padding-top: 90px;
+	}
+
+	ul {
+		display: flex;
 	}
 
 	li {
@@ -262,6 +266,17 @@ picture img {
 
 	.nav-desktop__holder {
 		display: inline-flex;
+		flex: 0 1 calc(100vw - 144px);
+		justify-content: space-between;
+	}
+
+	.introduction__text p {
+		max-width: 450px;
+		padding: 50px 0px;
+	}
+
+	.introduction__logos {
+		padding-top: 100px;
 	}
 	
 }
