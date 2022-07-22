@@ -233,12 +233,19 @@ picture img {
 
 	.desktop-menu__holder {
 		padding: 30px;
-		display: flex;
 	}
 
 	.desktop-menu__holder img {
-		width: 84px;
-		height: 30px;
+		padding-right: 30px;
+	}
+
+	.nav-desktop__holder {
+		display: inline-flex;
+		vertical-align: top;
+	}
+
+	.buttons__holder {
+		display: inline-flex;
 	}
 
 	.introduction {
@@ -266,18 +273,27 @@ picture img {
 	}
 
 	li {
-		padding: 0px 25px;
+		padding: 0px 20px;
 	}
 
 	.nav-desktop__holder {
 		display: inline-flex;
-		flex: 0 1 calc(100vw - 144px);
+		width: calc(100% - 128px);
 		justify-content: space-between;
+		vertical-align: top;
 	}
 
 	.introduction__text p {
 		max-width: 450px;
 		padding: 50px 0px;
+	}
+
+	a {
+		font-size: 1rem;
+	}
+
+	.button__regular a, .button__border a {
+		margin: unset;
 	}
 
 	.introduction__logos {
