@@ -309,7 +309,7 @@ picture img {
     	border-radius: 10px;
 	}
 
-	.accordionButton.accordion-open + .accordionDropdown:first-child {
+	.accordionButton.accordion-open + .accordionDropdown.first {
 		margin-left: -85px;
 	}
 
