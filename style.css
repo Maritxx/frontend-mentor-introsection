@@ -307,7 +307,11 @@ picture img {
     	background-color: white;
     	padding: 15px;
     	border-radius: 10px;
-		}
+	}
+
+	.accordionButton.accordion-open + .accordionDropdown:first-child {
+		margin-left: -85px;
+	}
 
 	.accordionDropdown li {
 		padding: 10px 20px;		
