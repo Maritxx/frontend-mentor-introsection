@@ -57,11 +57,11 @@ h1 {
 	}
 
 	.accordionButton::after {
-		background-image: url(img/icon-arrow-down.svg);
+		content: url(img/icon-arrow-down.svg);
 	}
 
 	.accordionButton.accordion-open::after {
-		background-image: url(img/icon-arrow-up.svg);
+		content: url(img/icon-arrow-up.svg);
 	}
 
 
