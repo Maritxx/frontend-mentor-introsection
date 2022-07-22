@@ -75,7 +75,7 @@ h1 {
 	font-weight: 700;
 	color: var(--bg-primary);
 	background-color: var(--heading-primary);
-	padding: 10px 25px;
+	padding: 15px 25px;
 	max-width: 150px;
 }
 
@@ -252,7 +252,7 @@ picture img {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
-		padding: 0px 30px;
+		padding: 30px;
 	}
 
 	.content-holder__text {
@@ -264,8 +264,9 @@ picture img {
 	}
 
 	h1 {
-		font-size: 4.5rem;
+		font-size: 5rem;
 		padding-top: 90px;
+		max-width: 530px;
 	}
 
 	ul {
@@ -298,6 +299,18 @@ picture img {
 
 	.introduction__logos {
 		padding-top: 100px;
+	}
+
+	.accordionButton.accordion-open + .accordionDropdown {
+		position: absolute;
+    	margin-top: 20px;
+    	background-color: white;
+    	padding: 15px;
+    	border-radius: 10px;
+		}
+
+	.accordionDropdown li {
+		padding: 10px 20px;		
 	}
 	
 }
