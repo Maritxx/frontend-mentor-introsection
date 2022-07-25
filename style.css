@@ -23,6 +23,10 @@ body {
 	position: fixed;
 }
 
+a:hover {
+	color: var(--heading-primary);
+}
+
 
 /*Font Styling*/
 h1 {
@@ -45,6 +49,10 @@ h1 {
 
 .button__border a {
 	border: 2px solid var(--text-primary);
+}
+
+.button__border a:hover {
+	border: 2px solid var(--heading-primary);
 }
 
 	/*Accordion Styling*/
@@ -81,7 +89,7 @@ h1 {
 		content: url(img/icon-reminders.svg);
 	}
 
-	.icon__planning a::before {
+	.icon__plan a::before {
 		padding-right: 14px;
 		content: url(img/icon-planning.svg);
 	}
@@ -109,6 +117,12 @@ h1 {
 	background-color: var(--heading-primary);
 	padding: 15px 25px;
 	max-width: 150px;
+	border: 1px solid transparent;
+}
+
+.button__black a:hover {
+	background-color: var(--bg-primary);
+	border: 1px solid var(--heading-primary);
 }
 
 
@@ -257,6 +271,13 @@ h1 {
 
 	ul li {
 		padding: 10px 20px;
+	}
+
+	.introduction__logos img {
+		padding: 0px 10px;
+		max-width: 25vw;
+		max-height: 19px;
+		vertical-align: middle;
 	}
 }
 
