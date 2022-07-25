@@ -129,9 +129,10 @@ h1 {
 	.content-holder__image {
 		flex: 0 1 40%;
 		background-image: url(img/image-hero-mobile.png);
-		background-size: 100% 100%;
+		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		padding-top: 75%;
 	}
 
 
