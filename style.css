@@ -66,6 +66,29 @@ h1 {
 		padding-left: 7px;
 	}
 
+	.icon__todo a::before {
+		padding-right: 14px;
+		content: url(img/icon-todo.svg);
+	}
+
+	.icon__calendar a::before {
+		padding-right: 14px;
+		content: url(img/icon-calendar.svg);
+	}
+
+	.icon__remind a::before {
+		padding-right: 14px;
+		content: url(img/icon-reminders.svg);
+	}
+
+	.icon__planning a::before {
+		padding-right: 14px;
+		content: url(img/icon-planning.svg);
+	}
+
+
+
+
 
 /*Introduction Section*/
 .introduction {
@@ -75,8 +98,8 @@ h1 {
 
 .introduction__logos img {
 	padding: 0px 10px;
-	max-width: 20vw;
-	max-height: 30px;
+	max-width: 12vw;
+	max-height: 22px;
 	vertical-align: middle;
 }
 
@@ -279,7 +302,7 @@ h1 {
 		flex: 0 1 40%;
 		background-image: url(img/image-hero-desktop.png);
 		background-size: cover;
-		background-position: center;
+		background-position: center top;
 		background-repeat: no-repeat;
 	}
 
