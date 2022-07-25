@@ -123,6 +123,7 @@ h1 {
 .button__black a:hover {
 	background-color: var(--bg-primary);
 	border: 1px solid var(--heading-primary);
+	color: var(--heading-primary);
 }
 
 
